@@ -1,7 +1,7 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: busy
 Upstream-Contact: Tim Mooney <mooney@aps.anl.gov>
-Source: http://some.url/
+Source: http://aps.anl.gov/bcda/synApps/busy/busy.html
 
 Files: *
 Copyright:  Copyright 2016 Tim Mooney

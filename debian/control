@@ -10,7 +10,7 @@ Build-Depends: debhelper (>= 9), epics-debhelper (>= 8.14~),
                rtems-epics-pc386,
 XS-Rtems-Build-Depends: rtems-epics
 Standards-Version: 3.9.6
-Homepage: http://some.url/
+Homepage: http://aps.anl.gov/bcda/synApps/busy/busy.html
 Vcs-Git: https://github.com/epicsdeb/busy.git
 Vcs-Browser: https://github.com/epicsdeb/busy
 
