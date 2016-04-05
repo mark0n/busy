@@ -1,0 +1,32 @@
+Source: busy
+Section: libdevel
+Priority: extra
+Maintainer: mdavidsaver <mdavidsaver@gmail.com>
+Build-Depends: debhelper (>= 9), epics-debhelper (>= 8.14~),
+               epics-dev,
+Standards-Version: 3.9.6
+Homepage: http://some.url/
+Vcs-Git: https://github.com/epicsdeb/busy.git
+Vcs-Browser: https://github.com/epicsdeb/busy
+
+Package: epics-busy-dev
+Architecture: any
+Depends: libbusy1.6.1 (= ${binary:Version}),
+         ${shlibs:Depends}, ${misc:Depends},
+         ${epics:Depends},
+Conflicts: epics-synapps,
+Description: Short description
+ Long description
+ with lines indented
+ .
+ This package contains headers and libraries needed at build time.
+
+Package: libbusy1.6.1
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends},
+Conflicts: epics-synapps,
+Description: Short description
+ Long description
+ with lines indented
+ .
+ This package contains runtime libraries
