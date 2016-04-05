@@ -4,6 +4,11 @@ Priority: extra
 Maintainer: mdavidsaver <mdavidsaver@gmail.com>
 Build-Depends: debhelper (>= 9), epics-debhelper (>= 8.14~),
                epics-dev,
+               rtems-epics-mvme2100,
+               rtems-epics-mvme3100,
+               rtems-epics-mvme5500,
+               rtems-epics-pc386,
+XS-Rtems-Build-Depends: rtems-epics
 Standards-Version: 3.9.6
 Homepage: http://some.url/
 Vcs-Git: https://github.com/epicsdeb/busy.git
@@ -15,9 +20,9 @@ Depends: libbusy1.6.1 (= ${binary:Version}),
          ${shlibs:Depends}, ${misc:Depends},
          ${epics:Depends},
 Conflicts: epics-synapps,
-Description: Short description
- Long description
- with lines indented
+Description: Binary record for wait for long operations
+ Basically boRecord with some additional logic to allow delayed completion
+ for use with ca_put_callback()
  .
  This package contains headers and libraries needed at build time.
 
@@ -25,8 +30,56 @@ Package: libbusy1.6.1
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends},
 Conflicts: epics-synapps,
-Description: Short description
- Long description
- with lines indented
+Description: Binary record for wait for long operations
+ Basically boRecord with some additional logic to allow delayed completion
+ for use with ca_put_callback()
  .
  This package contains runtime libraries
+
+Package: rtems-busy-mvme2100
+Architecture: all
+Depends: epics-busy-dev (>= ${source:Version}),
+         epics-busy-dev (<< ${source:Version}.1~),
+         ${rtems:Depends}, ${misc:Depends},
+Conflicts: rtems-synapps-mvme2100,
+Description: Binary record for wait for long operations
+ Basically boRecord with some additional logic to allow delayed completion
+ for use with ca_put_callback()
+ .
+ This package contains support for the MVME2100 VME SBC
+
+Package: rtems-busy-mvme3100
+Architecture: all
+Depends: epics-busy-dev (>= ${source:Version}),
+         epics-busy-dev (<< ${source:Version}.1~),
+         ${rtems:Depends}, ${misc:Depends},
+Conflicts: rtems-synapps-mvme3100,
+Description: Binary record for wait for long operations
+ Basically boRecord with some additional logic to allow delayed completion
+ for use with ca_put_callback()
+ .
+ This package contains support for the MVME3100 VME SBC
+
+Package: rtems-busy-mvme5500
+Architecture: all
+Depends: epics-busy-dev (>= ${source:Version}),
+         epics-busy-dev (<< ${source:Version}.1~),
+         ${rtems:Depends}, ${misc:Depends},
+Conflicts: rtems-synapps-mvme5500,
+Description: Binary record for wait for long operations
+ Basically boRecord with some additional logic to allow delayed completion
+ for use with ca_put_callback()
+ .
+ This package contains support for the MVME5500 VME SBC
+
+Package: rtems-busy-pc386
+Architecture: all
+Depends: epics-busy-dev (>= ${source:Version}),
+         epics-busy-dev (<< ${source:Version}.1~),
+         ${rtems:Depends}, ${misc:Depends},
+Conflicts: rtems-synapps-pc386,
+Description: Binary record for wait for long operations
+ Basically boRecord with some additional logic to allow delayed completion
+ for use with ca_put_callback()
+ .
+ This package contains support for the pc386 BSP
