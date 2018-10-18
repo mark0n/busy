@@ -1,5 +1,9 @@
-busy (1.6.1-1) UNRELEASED; urgency=medium
+busy (1.6.1-1) unstable; urgency=medium
 
+  [ mdavidsaver ]
   * initial
 
- --  mdavidsaver <mdavidsaver@gmail.com>  Thu, 10 Mar 2016 14:44:39 -0500
+  [ Martin Konrad ]
+  * Use build profile to enable RTEMS cross build
+
+ -- Martin Konrad <konrad@frib.msu.edu>  Thu, 13 Sep 2018 14:30:58 -0400

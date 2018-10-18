@@ -2,17 +2,17 @@ Source: busy
 Section: libdevel
 Priority: extra
 Maintainer: mdavidsaver <mdavidsaver@gmail.com>
-Build-Depends: debhelper (>= 9), epics-debhelper (>= 8.14~),
-               epics-dev,
-               rtems-epics-mvme2100,
-               rtems-epics-mvme3100,
-               rtems-epics-mvme5500,
-               rtems-epics-pc386,
+Build-Depends: debhelper (>= 9.20141010), dpkg-dev (>= 1.17.14),
+               epics-debhelper (>= 8.14~), epics-dev,
+               rtems-epics-mvme2100 <pkg.epics-base.rtems>,
+               rtems-epics-mvme3100 <pkg.epics-base.rtems>,
+               rtems-epics-mvme5500 <pkg.epics-base.rtems>,
+               rtems-epics-pc386 <pkg.epics-base.rtems>,
                epics-asyn-dev,
-               rtems-asyn-mvme2100,
-               rtems-asyn-mvme3100,
-               rtems-asyn-mvme5500,
-               rtems-asyn-pc386,
+               rtems-asyn-mvme2100 <pkg.epics-base.rtems>,
+               rtems-asyn-mvme3100 <pkg.epics-base.rtems>,
+               rtems-asyn-mvme5500 <pkg.epics-base.rtems>,
+               rtems-asyn-pc386 <pkg.epics-base.rtems>,
 XS-Rtems-Build-Depends: rtems-epics, rtems-asyn,
 Standards-Version: 3.9.6
 Homepage: http://aps.anl.gov/bcda/synApps/busy/busy.html
@@ -42,6 +42,7 @@ Description: Binary record for wait for long operations
  This package contains runtime libraries
 
 Package: rtems-busy-mvme2100
+Build-Profiles: <pkg.epics-base.rtems>
 Architecture: all
 Depends: epics-busy-dev (>= ${source:Version}),
          epics-busy-dev (<< ${source:Version}.1~),
@@ -54,6 +55,7 @@ Description: Binary record for wait for long operations
  This package contains support for the MVME2100 VME SBC
 
 Package: rtems-busy-mvme3100
+Build-Profiles: <pkg.epics-base.rtems>
 Architecture: all
 Depends: epics-busy-dev (>= ${source:Version}),
          epics-busy-dev (<< ${source:Version}.1~),
@@ -66,6 +68,7 @@ Description: Binary record for wait for long operations
  This package contains support for the MVME3100 VME SBC
 
 Package: rtems-busy-mvme5500
+Build-Profiles: <pkg.epics-base.rtems>
 Architecture: all
 Depends: epics-busy-dev (>= ${source:Version}),
          epics-busy-dev (<< ${source:Version}.1~),
@@ -78,6 +81,7 @@ Description: Binary record for wait for long operations
  This package contains support for the MVME5500 VME SBC
 
 Package: rtems-busy-pc386
+Build-Profiles: <pkg.epics-base.rtems>
 Architecture: all
 Depends: epics-busy-dev (>= ${source:Version}),
          epics-busy-dev (<< ${source:Version}.1~),
