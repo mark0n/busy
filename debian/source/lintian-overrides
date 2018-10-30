@@ -1,0 +1,12 @@
+busy source: invalid-restriction-formula-in-build-profiles-field <pkg.epics-base.rtems> rtems-busy-mvme2100
+busy source: invalid-restriction-formula-in-build-profiles-field <pkg.epics-base.rtems> rtems-busy-mvme3100
+busy source: invalid-restriction-formula-in-build-profiles-field <pkg.epics-base.rtems> rtems-busy-mvme5500
+busy source: invalid-restriction-formula-in-build-profiles-field <pkg.epics-base.rtems> rtems-busy-pc386
+busy source: invalid-profile-name-in-source-relation pkg.epics-base.rtems [build-depends: rtems-epics-mvme2100 <pkg.epics-base.rtems>]
+busy source: invalid-profile-name-in-source-relation pkg.epics-base.rtems [build-depends: rtems-epics-mvme3100 <pkg.epics-base.rtems>]
+busy source: invalid-profile-name-in-source-relation pkg.epics-base.rtems [build-depends: rtems-epics-mvme5500 <pkg.epics-base.rtems>]
+busy source: invalid-profile-name-in-source-relation pkg.epics-base.rtems [build-depends: rtems-epics-pc386 <pkg.epics-base.rtems>]
+busy source: invalid-profile-name-in-source-relation pkg.epics-base.rtems [build-depends: rtems-asyn-mvme2100 <pkg.epics-base.rtems>]
+busy source: invalid-profile-name-in-source-relation pkg.epics-base.rtems [build-depends: rtems-asyn-mvme3100 <pkg.epics-base.rtems>]
+busy source: invalid-profile-name-in-source-relation pkg.epics-base.rtems [build-depends: rtems-asyn-mvme5500 <pkg.epics-base.rtems>]
+busy source: invalid-profile-name-in-source-relation pkg.epics-base.rtems [build-depends: rtems-asyn-pc386 <pkg.epics-base.rtems>]
