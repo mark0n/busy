@@ -1,3 +1,9 @@
+busy (1.7-1) unstable; urgency=medium
+
+  * New upstream version 1.7
+
+ -- Martin Konrad <konrad@frib.msu.edu>  Wed, 03 Apr 2019 13:31:33 -0400
+
 busy (1.6.1-1) unstable; urgency=medium
 
   [ mdavidsaver ]
