@@ -1,7 +1,7 @@
 Source: busy
 Section: libdevel
-Priority: extra
-Maintainer: mdavidsaver <mdavidsaver@gmail.com>
+Priority: optional
+Maintainer: Martin Konrad <konrad@frib.msu.edu>
 Build-Depends: debhelper (>= 9.20141010), dpkg-dev (>= 1.17.14),
                epics-debhelper (>= 8.14~), epics-dev,
                rtems-epics-mvme2100 <pkg.epics-base.rtems>,
@@ -14,14 +14,14 @@ Build-Depends: debhelper (>= 9.20141010), dpkg-dev (>= 1.17.14),
                rtems-asyn-mvme5500 <pkg.epics-base.rtems>,
                rtems-asyn-pc386 <pkg.epics-base.rtems>,
 XS-Rtems-Build-Depends: rtems-epics, rtems-asyn,
-Standards-Version: 3.9.6
+Standards-Version: 4.3.0
 Homepage: http://aps.anl.gov/bcda/synApps/busy/busy.html
 Vcs-Git: https://github.com/epicsdeb/busy.git
 Vcs-Browser: https://github.com/epicsdeb/busy
 
 Package: epics-busy-dev
 Architecture: any
-Depends: libbusy1.6.1 (= ${binary:Version}),
+Depends: libbusy1.7 (= ${binary:Version}),
          ${shlibs:Depends}, ${misc:Depends},
          ${epics:Depends},
 Conflicts: epics-synapps,
@@ -31,7 +31,7 @@ Description: Binary record for wait for long operations
  .
  This package contains headers and libraries needed at build time.
 
-Package: libbusy1.6.1
+Package: libbusy1.7
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends},
 Conflicts: epics-synapps,
