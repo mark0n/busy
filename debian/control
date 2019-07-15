@@ -21,7 +21,7 @@ Vcs-Browser: https://github.com/epicsdeb/busy
 
 Package: epics-busy-dev
 Architecture: any
-Depends: libbusy1.7 (= ${binary:Version}),
+Depends: libbusy1.7.2 (= ${binary:Version}),
          ${shlibs:Depends}, ${misc:Depends},
          ${epics:Depends},
 Conflicts: epics-synapps,
@@ -31,7 +31,7 @@ Description: Binary record for wait for long operations
  .
  This package contains headers and libraries needed at build time.
 
-Package: libbusy1.7
+Package: libbusy1.7.2
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends},
 Conflicts: epics-synapps,
